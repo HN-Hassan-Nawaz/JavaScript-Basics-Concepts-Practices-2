@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Task</title>
+</head>
+
+<body>
+    <form action="" onsubmit="Submitfunction()">
+        <label for="">Name</label> <input type="text" id="name" onfocus="focusfunction(this)"
+            onclick="check_name_value()">
+        <br><br>
+
+        <label for="">email</label> <input type="email" id="email" required><br><br>
+
+        <input type="submit">
+    </form>
+
+    <script>
+        function focusfunction() {
+            document.getElementById("name").color = "red";
+        }
+
+        function check_name_value() {
+            var name_value = getElementById("name").value;
+            alert("name value " + name_value);
+            if (name_value == 0) {
+                document.getElementById("name").border = "red";
+                alert('zero value');
+            }
+            else {
+                document.getElementById("email").onfocus = "focusfunction";
+                alert('not zero value');
+            }
+        }
+
+
+
+        function Submitfunction() {
+            alert("submit " + check_name_value());
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        //Objects
+        var a = {
+            fname: "Hassan", //properties of the object
+            lname: "Nawaz",
+            age: 22,
+            country: "PAK",
+            //function that pick the values of the objects properties or variables data
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            },
+
+            //methods or functions inside objects
+            salary: function () {
+                return 25000;
+            },
+
+            //declare another object inside main object
+            living: {
+                city: "Islamabad",
+                email: "hn@gmail.com",
+                account: "abc.xyz"
+            },
+
+        };
+
+        document.write(a.age + "<br>");
+        document.write(a.fname + "<br>");
+        document.write(a.lname + "<br>");
+        document.write(a.salary() + "<br>");
+        document.write(a.living.city + "<br>");
+        document.write(a.living.email + "<br>");
+
+        document.write(a.fullname() + "<br>");
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

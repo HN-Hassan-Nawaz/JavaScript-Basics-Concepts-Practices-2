@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #test {
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SetInterval and ClearInterval Method</h1>
+    <!--SetInterval(used for animation purpose) & ClearInterval(used for stop the animation that can be used or set on html page)-->
+
+    <div id="test"></div>
+
+    <script>
+        var id = setInterval(anim, 100);//setInterval() method
+
+        var a = 0;
+        function anim() {
+            a = a + 10;
+            if (a == 200) {
+                clearInterval(id);//clearInterval method
+            }
+            else {
+                var target = document.getElementById("test");
+                target.style.marginLeft = a + 'px';
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script>
+        var ary = [
+            { fname: "ali", lname: "ahmad" },
+            { fname: "arslan", lname: "nawaz" },
+            { fname: "asad", lname: "ali" }
+        ];
+        //map function that fetch specific data or values from array or from properties of objects
+        var b = ary.map(fun);
+        
+        document.write(b);
+
+        function fun(x) {
+            return x.fname + " " + x.lname + "<br>";
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

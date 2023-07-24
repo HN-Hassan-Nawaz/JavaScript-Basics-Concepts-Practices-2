@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window</title>
+</head>
+
+<body onresize="resizeFunction()"> <!--resize function for window-->
+
+    <script>
+        function resizeFunction() {
+            console.clear();//clear function for clear the console output
+
+            var iheight = window.innerHeight;//get innerheight of the window or browser
+            console.log("inner height : " + iheight);
+
+            var oheight = window.outerHeight;//get outerheight of the window or browser
+            console.log("outer height : " + oheight);
+        }
+
+    </script>
+</body>
+
+</html>

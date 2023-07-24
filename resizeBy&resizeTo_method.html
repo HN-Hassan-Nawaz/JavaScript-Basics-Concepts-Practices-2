@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun</title>
+</head>
+
+<body>
+    <h1>Heading 1</h1>
+    <button onclick="openwindowfunction()">Open Window</button>
+    <button onclick="resizeWindow()">Resize Window</button>
+
+    <script>
+        var mywindow;
+        function openwindowfunction() {
+            mywindow = window.open("", "", "width=200px,height=200px,left=30px,top=30px");//open window method
+            mywindow.document.write("<p>This is New Window</p>");
+        }
+
+        function resizeWindow() {
+            mywindow.resizeBy(400, 400);//resize method like resizeTo() & resizeBy() method
+        }
+
+    </script>
+</body>
+
+</html>

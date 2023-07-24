@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timeout </title>
+    <style>
+        #test {
+            width: 150px;
+            height: 150px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>setTimeout() and clearTimeout() function</h1>
+    <div id="test"></div>
+    <button onclick="stopAnimation()">stop animation </button>
+
+    <script>
+        var id = setTimeout(anim, 3000);//used for animation but for only one time
+
+        function anim() {
+            var target = document.getElementById("test");
+            target.style.width = '500px';
+        }
+        function stopAnimation() {
+            clearTimeout(id);//if we want to stop the animation before timer that can be set the we use the clearTimout() function
+        }
+
+    </script>
+</body>
+
+</html>

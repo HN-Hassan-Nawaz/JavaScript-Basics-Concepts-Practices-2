@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Methods</title>
+    <script>
+
+        //Number Method
+        var a = "100";
+        var num = Number(a); //Number is the method that convert other data types to number data type
+        document.write("Number Method : " + (num + 10));
+        document.write("<br>");
+
+        //ParseInt Method
+        var b = "10.10";
+        var num = parseInt(b); //parseInt is the method that convert decimal to without decimal values
+        document.write("ParseInt : " + num);
+        document.write("<br>");
+
+        //ParseFloat Method
+        var c = 10.101;
+        var num = parseFloat(c); //parsefloat is the method that print the decimal values whole
+        document.write("Parseafloat : " + num);
+        document.write("<br>");
+
+        //isFinite Method
+        var d = 10; //return only true or false 
+        var num = isFinite(d);
+        document.write("isFinite : " + num);
+        document.write("<br>");
+
+        //isInteger Method
+        var d = 50.4; //return only true or false 
+        var num = Number.isInteger(d);
+        document.write("isInterger : " + num);
+        document.write("<br>");
+
+        //toFixed Method
+        var d = 5.56789; //fixed the values after point values 
+        var num = d.toFixed(2);
+        document.write("toFixed : " + num);
+        document.write("<br>");
+
+        //toFixed Method
+        var d = 5.56789; //precision or round off the values including before and after point values 
+        var num = d.toPrecision(2);
+        document.write("toPrecision : " + num);
+        document.write("<br>");
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

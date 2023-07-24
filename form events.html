@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+
+</head>
+
+<body>
+    <form action="">
+        <label for="">Name</label> <input type="text" id="fname" onfocus="focusfunction(this)"
+            oninput="inputfunction(this)" onblur="blurfunction(this)"> <br><br>
+
+        <label for="">Class</label> <input type="text" id="" onfocus="focusfunction(this)" oninput="inputfunction(this)"
+            onblur="blurfunction(this)"><br><br>
+
+        <label for="">Country</label>
+        <select id="" onfocus="focusfunction(this)" oninput="inputfunction(this)" onblur="blurfunction(this)">
+            <!--this is used for run time selected at any function then that specific function work-->
+            <option value="">Pakistan</option>
+            <option value="">India</option>
+            <option value="">Itly</option>
+            <option value="">Japan</option>
+        </select>
+
+    </form>
+    <div id="test" style=" border: 1px solid red;"></div>
+    <br>
+
+    <script>
+        //focus function
+        function focusfunction(element) {//var element is used b/c this work for any function at run time then store in element and then element is directly target to the document directly
+            element.style.background = "lime";
+        }
+        //blur function
+        function blurfunction(element) {
+            element.style.background = "";
+        }
+        //input function
+        function inputfunction(element) {
+            var x = element.value;
+            document.getElementById("test").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>

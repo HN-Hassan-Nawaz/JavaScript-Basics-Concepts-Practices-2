@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="openfunction()">Open Window</button> <!--for open window-->
+    <button onclick="closefunction()">Close Window</button> <!--for close window-->
+
+    <script>
+        var mywindow;
+        function openfunction() {
+            mywindow = open("http://www.yahoobaba.net", "_blank", "width=500px,height=200px,left=500px,top=200px"); //for open window
+        }
+
+        function closefunction() {
+            mywindow.close(); //for close window
+        }
+    </script>
+</body>
+
+</html>
