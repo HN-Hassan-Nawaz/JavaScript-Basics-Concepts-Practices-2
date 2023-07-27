@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Method</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            background: pink;
+            border: 5px solid red;
+            overflow: auto;
+        }
+
+        #inner-box {
+            background: lightgreen;
+            width: 1000px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>scrollTop & scrollLeft</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis accusamus, inventore saepe ipsa atque
+        impedit. Quae sequi rerum magni exercitationem, eos voluptatem libero fugit impedit consequuntur officiis
+        architecto. Quo ad, asperiores sapiente itaque aliquid vitae? In autem quae amet mollitia et pariatur libero,
+        illo quos quod minus animi similique ullam, facilis odio nostrum nisi molestias error praesentium magnam! Libero
+        similique eos atque facilis quisquam est voluptatibus eaque. Officiis culpa, reprehenderit vel aperiam repellat
+        illo sapiente reiciendis eius voluptatem minus voluptas provident rerum? Tempora ea consequatur deserunt quo
+        quos nisi officia dolor eaque, repudiandae nesciunt expedita enim quasi provident a odio culpa magni placeat
+        delectus! Consequatur perspiciatis nihil veritatis, quam totam illo eum eveniet animi, ipsa dignissimos modi?
+        Accusamus, laboriosam nulla eaque animi, aliquam at fugiat libero laudantium consectetur neque odio fugit
+        dolorem? Vitae sequi voluptatibus ducimus impedit, neque amet quibusdam molestiae nihil similique corrupti.
+        Incidunt voluptatem et officia eligendi soluta neque suscipit earum qui distinctio aperiam sit, velit quia
+        dolores reiciendis quo. Amet eius possimus dolor vitae in voluptas non hic, itaque voluptate similique earum
+        dolore molestias, velit excepturi eveniet, aspernatur facilis. Repudiandae voluptates dolorem laudantium
+        adipisci dolore veritatis, totam quo tempora eveniet! Saepe, mollitia nulla quisquam ea placeat quae!
+    </div>
+
+    <script>
+        const target = document.querySelector("#box");
+        target.addEventListener('scroll', () => {
+            console.clear();
+            console.log("scrollTop : " + target.scrollTop);
+            console.log("scrollLeft : " + target.scrollLeft);
+        });
+    </script>
+</body>
+
+</html>

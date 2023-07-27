@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client height-width properties</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            background: pink;
+            border: 10px solid black;
+            /*border not include in client width and height method*/
+            padding: 10px;
+            overflow: auto;
+        }
+
+        #inner-box {
+            width: 500px;
+            height: 200px;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>client height and width</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero esse numquam, obcaecati neque dolor itaque
+        necessitatibus vel tenetur aliquam nobis velit similique nihil, deleniti suscipit optio ipsa tempore modi ab!
+        Debitis tempore id nostrum impedit eaque temporibus fugit dolores vel soluta quam. Officia facilis adipisci
+        totam, magni perspiciatis ullam eveniet fugit id cum repellat harum recusandae tempora dolores, pariatur amet
+        odio omnis ea, expedita quasi rerum in ex! Itaque laborum dolore eos mollitia voluptatem suscipit, praesentium,
+        repellat nihil aperiam libero nobis quia maxime eum rerum ullam magni vero ipsum deserunt! Hic commodi, incidunt
+        rem dignissimos similique nisi debitis repellat, accusamus officiis sequi adipisci iste magnam ducimus obcaecati
+        dolore recusandae laboriosam ullam ea praesentium mollitia aliquam fuga culpa. Doloribus fugiat dolorum maxime
+        ullam praesentium delectus, expedita nihil harum natus temporibus quod sint provident optio, iure quo non id rem
+        reprehenderit est itaque sunt nostrum dolor tempora. Neque nisi est harum impedit ab nesciunt? Provident fugiat
+        quo architecto dolores hic, sit fuga consectetur illum voluptatem, atque deserunt consequuntur tempore dolore
+        doloremque. Quaerat vitae iusto enim sequi tempore, veniam repudiandae, non nemo quas quae recusandae officiis
+        facilis mollitia voluptate sapiente deserunt pariatur possimus suscipit autem dolore! Nam sint velit assumenda
+        rem dolor tempora explicabo quasi eligendi accusamus ducimus repellendus inventore illo consectetur possimus
+        quod distinctio quos natus, adipisci a beatae recusandae nostrum. Temporibus aliquam iusto veritatis ex sit
+        alias quas molestias quisquam vitae numquam eaque iure ad illo architecto sapiente doloremque fugiat maiores at,
+        omnis similique impedit maxime. Pariatur cum assumenda doloremque et quos officia tempore commodi saepe optio
+        necessitatibus tempora maiores error, in nam ex omnis debitis, dicta placeat temporibus? Iure qui minima ex
+        alias, eaque a voluptas voluptate veritatis? Temporibus suscipit facere numquam vel asperiores cumque sit
+        deserunt dicta quae earum, at eius veniam non aut! Quia in nemo accusamus amet nobis esse quod quaerat ad non
+        neque provident inventore facere fuga quis doloribus unde asperiores reprehenderit quas aliquid, veniam
+        consequuntur libero reiciendis nam. Repudiandae, explicabo ipsam quo nisi non sequi asperiores hic perferendis
+        voluptatibus libero voluptas porro inventore totam aperiam illum ad magnam voluptates rerum recusandae
+        accusantium similique omnis. Vel odio eligendi iste? Repellat nisi libero culpa molestiae voluptatibus, quam
+        reiciendis quisquam, quis aliquam placeat debitis dolore quaerat commodi ea nam voluptatum a ut quasi suscipit
+        error eum repellendus assumenda ipsam vel. Sequi corrupti ipsam temporibus, error recusandae dicta ratione eius,
+        at, consequuntur nobis est fuga accusantium minus rem debitis non rerum facere laboriosam necessitatibus
+        voluptatibus molestias nemo facilis doloribus! Natus deserunt eligendi saepe nihil. Molestiae saepe magni itaque
+        similique nulla error perspiciatis eum corrupti quis iusto vitae, vel corporis labore delectus quia et provident
+        nisi, nostrum reiciendis voluptates? Corporis illo quibusdam aliquid quod facilis itaque quas, eos laborum amet
+        modi incidunt cupiditate beatae neque impedit qui est voluptas! Impedit, itaque voluptate voluptas est enim
+        fugit repellat quia doloremque alias mollitia placeat eligendi distinctio error odio libero soluta unde
+        voluptatem nulla harum cupiditate, porro a? Aliquid neque excepturi ex aspernatur corporis fuga, est quos,
+        impedit nemo earum dicta, dolorum beatae.
+    </div>
+
+    <script>
+        var target = document.querySelector("#box");
+        var width = target.clientWidth;//count inner width of the div
+        var height = target.clientHeight;//count inner height of the div
+
+        console.log("client width : " + width);
+
+        console.log("client height : " + height);
+    </script>
+</body>
+
+</html>

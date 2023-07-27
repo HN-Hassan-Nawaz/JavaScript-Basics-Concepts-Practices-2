@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset width and height</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            background: pink;
+            overflow: auto;
+            padding: 10px;
+            /*padding also count in the width and height method*/
+        }
+
+        #inner-box {
+            width: 500px;
+            height: 200px;
+            background: springgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>offset width and height</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis ad illum accusantium odit numquam at,
+        eaque culpa animi fugiat eligendi vero quae id, esse modi enim rerum beatae laboriosam adipisci? Exercitationem
+        culpa, dolore voluptate aperiam expedita sequi commodi ad ipsum nobis. Quidem fugit adipisci esse et itaque
+        officiis fugiat nobis repellat dolorum, cum facilis, numquam rem recusandae laborum enim non? Architecto, esse.
+        Unde ratione quibusdam odio asperiores quod incidunt et sit. Fuga temporibus quod consequatur recusandae sunt
+        sint delectus pariatur non ut dolorum dolores ipsam at, explicabo repudiandae sit ad unde cupiditate iure
+        possimus quis a ipsa exercitationem. Sequi rerum laudantium corrupti illum, dicta reiciendis quod, inventore quo
+        facilis ullam distinctio neque porro numquam accusantium quos harum optio laborum ut. Ratione asperiores nihil
+        adipisci? Quibusdam numquam illo fugit quod quaerat quam dolor nam cupiditate labore voluptatibus! Sunt numquam
+        soluta sequi tempora velit nobis nostrum magni modi, earum est unde ex similique omnis nemo cumque cupiditate
+        officia maxime minus rerum necessitatibus quidem veniam aliquam asperiores minima. Quidem repudiandae earum
+        corrupti nihil placeat accusantium quasi et non. Fugiat iusto optio accusantium ab, sunt neque praesentium
+        veniam repellendus omnis nihil a error cumque ea ex nesciunt dicta numquam laborum vel veritatis harum.
+        Reprehenderit dignissimos dicta eum sint, voluptates cupiditate exercitationem voluptatem maiores tempore modi,
+        ratione vitae sunt qui repellat itaque saepe cum iusto minima deleniti. Quaerat eligendi quae excepturi at
+        reiciendis mollitia fugiat ratione et placeat similique, fuga, voluptate sed blanditiis ipsam assumenda dolores
+        iure veniam incidunt doloribus sapiente, aperiam quibusdam. Ratione sapiente dolorum veritatis, repellat
+        nesciunt vero sit similique maxime nam ab impedit delectus reprehenderit distinctio autem quam perspiciatis illo
+        ut animi eveniet cumque voluptatem officia dolorem minima inventore. Sunt nam a quibusdam nobis et amet quae,
+        reprehenderit veritatis facilis dignissimos, perferendis sapiente quam, aperiam placeat! Nulla maiores error
+        incidunt! Id ad doloribus magni nisi, recusandae adipisci, rem eveniet harum consectetur velit quam, dignissimos
+        voluptatibus numquam reprehenderit quasi excepturi impedit fugit! Perspiciatis, quidem aliquid commodi quod
+        voluptatibus ab quasi iste officia, reiciendis distinctio sint eum atque amet cum placeat libero beatae
+        doloremque enim saepe porro harum maxime sequi quaerat deleniti? Maiores doloremque, perspiciatis quae quo
+        veritatis corrupti nemo iusto, nesciunt numquam reprehenderit suscipit natus nobis iure esse odit, facilis ab
+        atque voluptatibus itaque unde consequuntur aliquid. Nostrum doloremque aperiam dolores nemo blanditiis,
+        reprehenderit ratione impedit sequi quos, dolorem temporibus eos officiis? Laborum odit omnis nostrum esse
+        quibusdam assumenda sit, similique saepe totam neque tenetur necessitatibus, odio amet quo et, voluptate
+        cupiditate dolores. Quisquam quae, aspernatur sint quasi voluptate molestiae corporis dignissimos iure
+        repellendus hic incidunt dolores maxime ex numquam sequi nostrum sapiente! Minus blanditiis excepturi beatae
+        aliquam quasi pariatur enim molestias, nam facere ipsam quaerat nisi eius illo qui omnis placeat consequatur a
+        modi atque, tenetur voluptatum odio nostrum. Rem laborum repellat recusandae aut, eum iure, optio, dicta ea
+        consequuntur tempore quam. Cumque voluptas illo temporibus, reiciendis nihil illum laudantium delectus dolorem
+        ut nisi mollitia consectetur, natus consequuntur dolore quaerat tenetur nulla beatae saepe. Nostrum officia
+        deserunt nemo magni! Tempora, dolores.
+    </div>
+    <script>
+        var target = document.querySelector("#box");
+        var width = target.offsetWidth;//calculate the width of the div + also its padding or margin if exist in that page
+        var height = target.offsetHeight;//calculate the height of the div + also its padding or margin if exist in that page
+
+        console.log("offset Width : " + width);
+        console.log("offset Height : " + height);
+    </script>
+</body>
+
+</html>

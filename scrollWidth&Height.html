@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollwidth and Height</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 300px;
+            background: pink;
+            overflow: auto;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #inner-box{
+            width: 600px;
+            height: 100px;
+            background: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Scroll Width and Height</h1>
+    <div id="box">
+        <div id="inner-box"></div>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur praesentium optio quod suscipit
+            necessitatibus nesciunt consectetur in dolorum minus aperiam obcaecati modi ratione ea placeat quae dolor
+            explicabo, neque dolorem at libero provident officia corporis nihil facere. Optio earum hic quos dolore
+            praesentium similique ratione, culpa voluptate repellat quae veritatis, ullam architecto molestiae magni
+            mollitia dolorum est maiores! Odit quas animi maiores laborum in cumque similique ducimus illum! Facilis
+            culpa fugit minima, blanditiis aspernatur tempora dolor. Laboriosam ex neque in veniam aliquam eveniet,
+            necessitatibus dolore laudantium nisi assumenda cumque error consequuntur dolorum magni delectus facilis
+            voluptates qui voluptas, sunt nesciunt asperiores, maiores unde? Reprehenderit numquam nihil dolor labore
+            deleniti cum fugit libero consequuntur officiis tempora! Hic eum fugiat, aliquid quam, ex error quis atque
+            nisi doloribus nihil magnam quo nam beatae cupiditate voluptate quas modi consequuntur earum officiis. Cum
+            eius culpa alias ipsam a quis commodi vel, asperiores enim est cumque fugit provident hic eos, dolorem
+            temporibus repellendus quidem, necessitatibus iusto. Incidunt deleniti molestias odio. Quam, a quo quibusdam
+            ad minima et quos vitae deserunt, expedita ea, repudiandae assumenda tempora architecto in nesciunt libero
+            distinctio sunt labore rem. Sed nostrum vel similique corrupti repellat, ipsa, expedita excepturi eum in
+            placeat nesciunt odio voluptas fuga numquam! Repellat quae minus corporis totam! Vero architecto earum
+            veritatis. Cupiditate eius ipsam animi. Iusto suscipit aperiam odio soluta dolores modi atque. Nulla
+            expedita corporis a voluptatum eligendi excepturi quos similique culpa nemo libero in aliquam sint doloribus
+            maiores quia accusantium alias iusto atque, sapiente soluta fugit ea obcaecati quisquam! Porro quam saepe,
+            accusamus eum dolor eius, hic reiciendis perferendis, expedita iure quae aperiam vero sint amet voluptate
+            corrupti architecto rerum. Iste eum corrupti perspiciatis. Delectus similique magni commodi ullam hic alias
+            esse nulla reiciendis molestiae sit quisquam quia suscipit ut perferendis, assumenda rerum, ipsa non nemo
+            deserunt! Quasi rerum quos dolore cum tenetur ipsa aspernatur, ipsam totam at fuga magni perferendis, quam
+            ratione hic! Ipsa dicta fugiat omnis mollitia consectetur! At, dolorem mollitia. Corrupti ipsum incidunt
+            voluptas, minima et vero reprehenderit quasi amet aspernatur quas quibusdam culpa explicabo dolorem facere
+            perspiciatis magnam! Vitae soluta ratione alias inventore id eaque consectetur, nostrum, quae expedita
+            quaerat blanditiis adipisci debitis necessitatibus iure ipsa dolorem tempora natus voluptatibus architecto
+            nemo a ducimus error! Adipisci, maxime? In, corporis ipsa voluptas delectus cupiditate nulla laborum debitis
+            perferendis dolorem accusantium quidem enim nostrum deleniti quo cumque est vero minima a! Corrupti sapiente
+            dicta officiis quibusdam tenetur, natus sunt. Repellat quidem molestias nisi non blanditiis adipisci nemo ab
+            distinctio suscipit, vero, tempora dolores debitis? Nihil, dolores! Neque accusantium blanditiis corporis
+            aliquid asperiores earum quam reiciendis magnam beatae, soluta tempore aut amet, nihil quas nemo? Earum
+            animi, vitae possimus labore illo debitis et tenetur fugiat accusantium dolores laboriosam culpa atque
+            maiores consequuntur ab sequi alias quae, fuga odit repellat provident deserunt porro voluptas. Veritatis ex
+            quasi est neque, id quis iste modi quam sed repellendus, ullam molestias quaerat suscipit excepturi.
+            Architecto voluptates alias commodi quia veniam vel porro harum cum laborum sit, fugit quas?
+    
+        <script>
+            const target = document.querySelector("#box");
+            var scroll_width = target.scrollWidth;
+            var scroll_height = target.scrollHeight;
+
+            console.log("Scroll Width : " + scroll_width);
+            console.log("Scroll Height : " + scroll_height);
+        </script>
+    </div>
+</body>
+
+</html>
